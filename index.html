@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christophe Muller - Coaching, Training & Conseil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-initials">C</span>
+                <span class="logo-text">Christophe Muller</span>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="cv.html"><i class="fas fa-user-tie"></i> CV</a></li>
+                <li><a href="experience.html"><i class="fas fa-briefcase"></i> Expérience</a></li>
+                <li><a href="talents.html"><i class="fas fa-star"></i> Talents</a></li>
+                <li><a href="cours.html"><i class="fas fa-graduation-cap"></i> Cours</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Christophe <span class="highlight">MULLER</span></h1>
+                    <h2 class="hero-subtitle">Coaching, training et conseil en formation professionnelle</h2>
+                    <p class="hero-quote">« Se réunir est un début; rester ensemble est un progrès; travailler ensemble est la réussite »</p>
+                    
+                    <div class="hero-buttons">
+                        <a href="contact.html" class="btn btn-primary">Me contacter</a>
+                        <a href="cv.html" class="btn btn-secondary">Voir mon CV</a>
+                    </div>
+                    
+                    <div class="hero-contact-icons">
+                        <a href="https://www.google.com/maps?q=38+Lotissement+du+Parc,+57730+Petit-Ebersviller" target="_blank" class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </a>
+                        <a href="mailto:muller.christophe.mach@gmail.com" class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:+33618040751" class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/chmuller1" target="_blank" class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="profile-image-container">
+                        <img src="assets/images/profile.jpg" alt="Christophe Muller" class="profile-image" id="profileImage">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Domaines d'Expertise</h2>
+            <p class="section-subtitle">Accompagnement professionnel sur mesure</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Coaching</h3>
+                    <p>Accompagnement personnalisé pour optimiser votre potentiel professionnel.</p>
+                    <a href="talents.html" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Training</h3>
+                    <p>Formations adaptées aux besoins spécifiques de votre organisation.</p>
+                    <a href="cours.html" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Conseil</h3>
+                    <p>Expertise en stratégie de formation et développement des compétences.</p>
+                    <a href="experience.html" class="service-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Image Modal -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <span class="modal-close" id="modalClose">&times;</span>
+            <img src="" alt="" class="modal-image" id="modalImage">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

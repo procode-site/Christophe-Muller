@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christophe Muller - Parcours Éducatif</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-initials">C</span>
+                <span class="logo-text">Christophe Muller</span>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="cv.html"><i class="fas fa-user-tie"></i> CV</a></li>
+                <li><a href="experience.html"><i class="fas fa-briefcase"></i> Expérience</a></li>
+                <li><a href="talents.html"><i class="fas fa-star"></i> Talents</a></li>
+                <li><a href="cours.html" class="active"><i class="fas fa-graduation-cap"></i> Cours</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Mon Parcours Éducatif</h1>
+            <p>Formations et diplômes obtenus</p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education-section">
+        <div class="container">
+            <h2 class="section-title">Formations et Diplômes</h2>
+            <p class="section-subtitle">Un parcours académique enrichissant et diversifié</p>
+            
+            <div class="education-timeline">
+                <div class="education-item">
+                    <div class="education-content">
+                        <h3>Conseiller en Insertion Professionnelle</h3>
+                        <span class="education-date">AFPA de Strasbourg - 2014-2015</span>
+                        <p><strong>Titre obtenu le 07 septembre 2015</strong></p>
+                        <p>Compétences du Conseiller Insertion Professionnelle :</p>
+                        <ul>
+                            <li>Accueil et analyse de la demande des personnes en démarche d'insertion</li>
+                            <li>Établissement d'un diagnostic partagé</li>
+                            <li>Accompagnement des personnes dans leur parcours d'insertion sociale et professionnelle</li>
+                            <li>Mise en œuvre d'offre de service auprès des employeurs</li>
+                            <li>Mise en œuvre de projets de réalisation et d'actions dans les champs de l'insertion</li>
+                        </ul>
+                    </div>
+                    <div class="education-image" id="afpaImage">
+                        <img src="assets/images/afpa.jpg" alt="AFPA Strasbourg">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="education-item">
+                    <div class="education-content">
+                        <h3>DU Responsable de Formation</h3>
+                        <span class="education-date">Université Marc Bloch (Strasbourg II) - 2004-2005</span>
+                        <p><strong>Master 1 Sciences Humaines</strong></p>
+                        <p>Compétences et capacités attestées :</p>
+                        <ul>
+                            <li>Analyser la commande et la problématique en intégrant les variables environnementales</li>
+                            <li>Établir un plan de formation dans le respect des règles juridiques et financières</li>
+                            <li>Concevoir et planifier les dispositifs et les progressions</li>
+                            <li>Conduire un projet et assurer le suivi pédagogique des actions</li>
+                            <li>Construire des protocoles et outils d'évaluation</li>
+                            <li>Mener des entretiens et établir des profils de compétences</li>
+                            <li>Concevoir la politique de communication interne/externe</li>
+                            <li>Maîtriser les connaissances relatives aux conduites d'apprentissage</li>
+                            <li>Conduire des analyses de pratiques pour garantir la qualité professionnelle</li>
+                        </ul>
+                    </div>
+                    <div class="education-image" id="universityImage">
+                        <img src="assets/images/university.jpg" alt="Université Marc Bloch Strasbourg II">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="education-item">
+                    <div class="education-content">
+                        <h3>Diplôme de l'IPC - BTS</h3>
+                        <span class="education-date">Institut de Promotion du Commerce - 1991-1992</span>
+                        <p>Formation commerciale de haut niveau :</p>
+                        <ul>
+                            <li>Techniques commerciales avancées</li>
+                            <li>Gestion d'entreprise</li>
+                            <li>Marketing et communication</li>
+                            <li>Négociation commerciale</li>
+                            <li>Management d'équipe</li>
+                        </ul>
+                    </div>
+                    <div class="education-image" id="cciImage">
+                        <img src="assets/images/cci.jpg" alt="Institut de Promotion du Commerce">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="contact.html" class="btn btn-primary">Échanger sur la formation</a>
+                <a href="talents.html" class="btn btn-secondary">Voir mes compétences</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

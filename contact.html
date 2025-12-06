@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christophe Muller - Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-initials">C</span>
+                <span class="logo-text">Christophe Muller</span>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="cv.html"><i class="fas fa-user-tie"></i> CV</a></li>
+                <li><a href="experience.html"><i class="fas fa-briefcase"></i> Expérience</a></li>
+                <li><a href="talents.html"><i class="fas fa-star"></i> Talents</a></li>
+                <li><a href="cours.html"><i class="fas fa-graduation-cap"></i> Cours</a></li>
+                <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contactez-moi</h1>
+            <p>Discutons de votre projet de formation ou d'accompagnement</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" style="padding: 60px 0;">
+        <div class="container">
+            <div style="max-width: 900px; margin: 0 auto;">
+                <h2 class="section-title">Prendre contact</h2>
+                <p class="section-subtitle" style="margin-bottom: 50px; text-align: center;">
+                    Je serais ravi d'échanger avec vous sur vos besoins en formation, coaching ou conseil.<br>
+                    N'hésitez pas à me contacter pour toute demande d'information.
+                </p>
+                
+                <div style="background-color: var(--white); border-radius: var(--border-radius); padding: 50px; box-shadow: var(--shadow);">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; margin-bottom: 40px;">
+                        <!-- Adresse -->
+                        <div style="display: flex; align-items: flex-start; padding: 20px; border-radius: var(--border-radius); background-color: var(--light-color);">
+                            <i class="fas fa-map-marker-alt" style="font-size: 1.8rem; color: var(--primary-color); margin-right: 20px; flex-shrink: 0; margin-top: 5px;"></i>
+                            <div>
+                                <h4 style="margin-bottom: 10px; color: var(--primary-color);">Adresse</h4>
+                                <p style="color: var(--gray-medium); line-height: 1.6;">
+                                    38 Lotissement du Parc<br>
+                                    57730 Petit-Ebersviller, France
+                                </p>
+                                <a href="https://www.google.com/maps?q=38+Lotissement+du+Parc,+57730+Petit-Ebersviller" 
+                                   target="_blank" 
+                                   style="color: var(--primary-color); text-decoration: none; font-weight: 600; margin-top: 10px; display: inline-block;">
+                                    <i class="fas fa-external-link-alt"></i> Voir sur la carte
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Email -->
+                        <div style="display: flex; align-items: flex-start; padding: 20px; border-radius: var(--border-radius); background-color: var(--light-color);">
+                            <i class="fas fa-envelope" style="font-size: 1.8rem; color: var(--primary-color); margin-right: 20px; flex-shrink: 0; margin-top: 5px;"></i>
+                            <div>
+                                <h4 style="margin-bottom: 10px; color: var(--primary-color);">Email</h4>
+                                <p style="color: var(--gray-medium); line-height: 1.6; word-break: break-word;">
+                                    muller.christophe.mach@gmail.com
+                                </p>
+                                <a href="mailto:muller.christophe.mach@gmail.com" 
+                                   style="color: var(--primary-color); text-decoration: none; font-weight: 600; margin-top: 10px; display: inline-block;">
+                                    <i class="fas fa-envelope"></i> Envoyer un email
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Téléphones -->
+                        <div style="display: flex; align-items: flex-start; padding: 20px; border-radius: var(--border-radius); background-color: var(--light-color);">
+                            <i class="fas fa-phone" style="font-size: 1.8rem; color: var(--primary-color); margin-right: 20px; flex-shrink: 0; margin-top: 5px;"></i>
+                            <div>
+                                <h4 style="margin-bottom: 10px; color: var(--primary-color);">Téléphones</h4>
+                                <p style="color: var(--gray-medium); line-height: 1.6;">
+                                    Mobile : 06 18 04 07 51<br>
+                                    Fixe : 03 54 27 39 81
+                                </p>
+                                <div style="margin-top: 10px;">
+                                    <a href="tel:+33618040751" 
+                                       style="color: var(--primary-color); text-decoration: none; font-weight: 600; display: inline-block; margin-right: 15px;">
+                                        <i class="fas fa-mobile-alt"></i> Appeler le mobile
+                                    </a>
+                                    <a href="tel:+3354273981" 
+                                       style="color: var(--primary-color); text-decoration: none; font-weight: 600; display: inline-block;">
+                                        <i class="fas fa-phone"></i> Appeler le fixe
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- LinkedIn -->
+                        <div style="display: flex; align-items: flex-start; padding: 20px; border-radius: var(--border-radius); background-color: var(--light-color);">
+                            <i class="fab fa-linkedin" style="font-size: 1.8rem; color: var(--primary-color); margin-right: 20px; flex-shrink: 0; margin-top: 5px;"></i>
+                            <div>
+                                <h4 style="margin-bottom: 10px; color: var(--primary-color);">LinkedIn</h4>
+                                <p style="color: var(--gray-medium); line-height: 1.6;">
+                                    www.linkedin.com/in/chmuller1
+                                </p>
+                                <a href="https://www.linkedin.com/in/chmuller1" 
+                                   target="_blank" 
+                                   style="color: var(--primary-color); text-decoration: none; font-weight: 600; margin-top: 10px; display: inline-block;">
+                                    <i class="fas fa-external-link-alt"></i> Visiter mon profil
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Icônes de contact -->
+                    <div class="hero-contact-icons" style="justify-content: center; margin-top: 30px;">
+                        <a href="https://www.google.com/maps?q=38+Lotissement+du+Parc,+57730+Petit-Ebersviller" target="_blank" class="contact-icon" id="addressIcon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </a>
+                        <a href="mailto:muller.christophe.mach@gmail.com" class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:+33618040751" class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <a href="tel:+3354273981" class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/chmuller1" target="_blank" class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Citation -->
+                    <div style="text-align: center; margin-top: 40px; padding-top: 30px; border-top: 1px solid var(--gray-light);">
+                        <p style="color: var(--gray-medium); font-style: italic; font-size: 1.1rem;">
+                            <i class="fas fa-quote-left" style="margin-right: 5px; color: var(--secondary-color);"></i>
+                            « J'apprécie les recommandations ! »
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
