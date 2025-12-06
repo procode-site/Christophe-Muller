@@ -1300,3 +1300,152 @@ p {
         margin-right: 20px;
     }
 }
+/* ===== HERO SECTION MOBILE REORDER ===== */
+
+.hero-name-mobile {
+    text-align: center;
+    margin-bottom: 30px;
+    display: none; /* Caché par défaut, visible seulement sur mobile */
+}
+
+.hero-name-mobile .hero-title {
+    font-size: 2.2rem;
+    margin-bottom: 0;
+}
+
+.desktop-only {
+    display: block; /* Visible par défaut pour desktop */
+}
+
+/* Sur mobile, inverser l'ordre */
+@media (max-width: 768px) {
+    .hero-name-mobile {
+        display: block; /* Affiche le nom en haut sur mobile */
+    }
+    
+    .desktop-only {
+        display: none; /* Cache le nom dans le texte sur mobile */
+    }
+    
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .hero-image {
+        order: 1; /* Image après le nom */
+        margin-bottom: 25px;
+    }
+    
+    .hero-text {
+        order: 2; /* Texte après l'image */
+    }
+    
+    .hero-name-mobile {
+        order: 0; /* Nom tout en haut */
+    }
+    
+    /* Ajustements image mobile */
+    .profile-image-container {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    
+    .profile-image {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+    
+    .hero-quote {
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+}
+
+/* Sur desktop, ordre normal */
+@media (min-width: 769px) {
+    .hero-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .hero-name-mobile {
+        display: none; /* Cache le nom mobile sur desktop */
+    }
+    
+    .hero-text {
+        flex: 1;
+        padding-right: 50px;
+    }
+    
+    .hero-image {
+        flex: 1;
+        text-align: center;
+    }
+    
+    .profile-image-container {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .profile-image {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* Très petits écrans */
+@media (max-width: 480px) {
+    .hero-name-mobile .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .profile-image-container {
+        max-width: 200px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Animation d'apparition */
+.hero-image {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-text {
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
